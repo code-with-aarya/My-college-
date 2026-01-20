@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Science Engineering</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ 
+<style type="text/css">
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#F0EAD6;  
+  color:#333;
+ 
+}
+
+  .cs-page{
+  /*background:#f6f9f6;*/
+ /* background:red;*/
+   margin-top:-50px;
+  padding:70px 20px;
+  font-family:Arial, sans-serif;
+} 
+    .cs-page-title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:40px;
+  }
+  
+  .cs-page-title span{
+  color:#4caf50;
+  }
+  
+  /* overview CARD */
+  .cs-overview-card{
+  max-width:1100px;
+  margin:auto;
+  background:#fff;
+  display:flex;
+  gap:30px;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  }
+  
+  .overview-text{
+  flex:1;
+  }
+  
+  .overview-text h3{
+  color:#4caf50;
+     margin-bottom:16px;
+     font-size:25px;
+  } 
+  .bullets {
+           margin-top:10px;
+    font-size:15px;
+  }
+   .bullets  li{ 
+     margin:6px 0; 
+     text-align:left;
+     list-style:none;
+   }
+  
+  .cs-image{
+   padding-right:10px;  
+  flex:1;
+  text-align:right;
+  }
+
+  .cs-image img{
+  width:100%;
+  max-width:260px;
+  border-radius:18px;
+  }
+  
+  
+  /* == highlight == */
+.highlights{
+  max-width:1100px;
+  margin:25px auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.highlights div{
+  background:#e8f5e9;
+  padding:12px 10px;
+  text-align:center;
+  border-radius:10px;
+  font-weight:600;
+  border:1px solid gray;
+}
+    /* === semester and syllabus == */
+  .sem-info{
+  max-width:1100px;
+  margin:45px auto 35px;
+}
+.sem-info h3{
+       margin:25px auto;
+       text-align:center;
+}
+   .sem-info .sem-box{
+       background:#abab;
+     display:flex;
+  flex-direction:column;
+     justify-content:space-between;
+     /*align-items:center;*/
+  gap:45px;
+    padding: 30px 30px;
+     border-radius:10px;
+     text-align:center;
+   }
+   .sem-box .download{
+     
+     display:flex;
+  
+   justify-content:center;
+  align-items:center;
+  gap:20px;
+       flex-wrap:wrap;
+     
+   }
+     
+  .sem-box .download a{
+color: white;
+      text-decoration:none;
+      font-weight:500;
+      background:green;
+    
+      padding:8px 15px;
+    
+    border-radius:10px;
+    border:1px solid gray;    
+     
+   
+}
+.sem-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.sem-grid div{
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+   justify-content:center;
+  align-items:center;
+  gap:10px;
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+  .sem-grid  a{
+       color: #4caf50;
+      text-decoration:none;
+      font-weight:500;
+      background:#f5f7fb;
+    
+      padding:5px 10px;
+     width:150px;
+    border-radius:10px;
+    border:1px solid gray;
+ } 
+  /*div   .a{
+  background:#fff;
+  color:#2e7d32;
+  border:2px solid #2e7d32;
+}*/
+  
+  /* == SUBJECTS & CAREERS == */
+.grid-2{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+ .card h3{
+   margin-bottom:10px;
+ }
+
+.card ul li{
+  list-style:none;
+  margin:6px 0;
+}
+  .lab{
+  max-width:1100px;
+  margin:35px auto;
+}
+.lab h3{
+       margin:25px auto;
+       text-align:center;  
+        font-size:25px;
+}
+  .lab p{
+       margin-bottom:45px;
+       text-align:center;    
+}
+.actions{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+}
+.actions img{
+       border-radius:10px;
+    width:250px;
+    height:180px;
+}
+
+
+
+   
+/* Mobile */
+@media(max-width:768px){
+  body{
+    padding:0;
+  }
+  
+      
+    .cs-page{
+ /* background:green;*/
+  padding:40px 15px;
+  
+}     .cs-page-title{
+          font-size:30px;
+        
+     }   
+         
+   .overview-text h3{
+      font-size:25px;
+      
+   }
+  .cs-overview-card{
+  flex-direction:column;
+  text-align:center;
+     padding:40px 10px ;
+     margin :0;
+  }
+  .cs-image{
+   padding:0; 
+  flex:1;
+  text-align:center;
+  }
+
+  .sem-info .sem-box{ 
+    padding:30px 20px;
+  }
+.sem-box .download{
+   
+  flex-direction:column;
+}
+  .highlights{ grid-template-columns:repeat(2,1fr); }
+  .grid-2, .sem-grid{ grid-template-columns:1fr; }
+  .actions{
+       flex-direction:column;
+  }
+   .actions img{
+       height:150px;
+     
+   }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+ <li> <a href="gallery.html">Gallery</a></li>
+
+  <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+
+
+
+
+  <section class="cs-page">  
+  <!-- CSE  HERO -->
+  
+
+    <h2 class="cs-page-title">
+    Computer Science and <span>Engineering</span>
+  </h2>
+
+  <!-- CSE  INFO -->
+  <div class="cs-overview-card">
+    <div class="overview-text">
+      <h3>   Brief Overview of CSE
+      </h3>    
+      <p>
+      This course builds strong programming and problem-solving skills.
+      Students learn modern computing technologies through theory and
+      hands-on practice.
+    </p>
+      <ul class="bullets">
+      <li><i class="fa-solid fa-circle-chevron-down"></i> Logic building & coding fundamentals</li>
+      <li><i class="fa-solid fa-circle-chevron-down"></i> Software and database basics</li>
+      <li><i class="fa-solid fa-circle-chevron-down"></i> Industry-oriented learning</li>
+    </ul>
+    </div>
+
+    <div class="cs-image">
+      <img src="cs.jpg" alt="cs image">
+    </div>
+  </div>
+  <!-- QUICK HIGHLIGHTS -->
+  <div class="highlights">
+    <div><i class="fa-solid fa-graduation-cap"></i> Diploma</div>
+    <div><i class="fa-solid fa-alarm-clock"></i> 3 Years</div>
+    <div>💺 60 Seats</div>
+    <div>🧑‍💻 Practical Focus</div>
+  </div>
+
+  <!-- SEMESTER SNAPSHOT -->
+  <section class="sem-info">
+    <h3>Semester Snapshot & Year-wise Syllabus</h3>
+    <div class="sem-box">
+    <div class="sem-grid">
+      <div><b> Semester 1–2</b><small>Programming Basics</small>
+        <a href="https://urise.up.gov.in/resources/profile_image/su/17310529021st_Year_Syllabus_for_42_branches_05-08-2024_compressed.pdf" target="_blanks">view 1st year <i class="fa-solid fa-angle-right"></i></a> 
+      </div>
+      <div> <b>Semester 3–4 </b><small>Web & Databases</small>
+        <a href="https://urise.up.gov.in/resources/profile_image/syllabus/2025-26/355_2025_26.pdf" target="_blanks">view 1st year <i class="fa-solid fa-angle-right"></i></a> 
+      </div>
+      <div><b>Semester 5–6 </b><small>Advanced Concepts & Project</small>
+         <a href="" target="_blanks">view 1st year <i class="fa-solid fa-angle-right"></i></a>  
+        
+      </div>
+    </div>
+      <div class="download"  ><a href="" download=""><i class="fa-solid fa-download"></i> Download full syllabus</a> 
+        <a class="a" target="_blanks" href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" >Apply now <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+    
+      </div>
+  </section>
+
+  <!-- SUBJECTS & CAREERS -->
+  <section class="grid-2">
+    <div class="card">
+      <h3>Key Subjects</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-chevron-down"></i> C Programming</li>
+        <li> <i class="fa-solid fa-circle-chevron-down"></i> C++</li>
+        <li> <i class="fa-solid fa-circle-chevron-down"></i> HTML, CSS, JavaScript</li>
+        <li><i class="fa-solid fa-circle-chevron-down"></i> DBMS</li>
+        <li> <i class="fa-solid fa-circle-chevron-down"></i> Data Structures</li>
+        <li><i class="fa-solid fa-circle-chevron-down"></i> Python Programming</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Career Opportunities</h3>
+      <ul>
+        <li><i class="fa-solid fa-laptop-file"></i> Junior Software Developer</li>
+        <li><i class="fa-solid fa-laptop-code"></i> Web Developer (Frontend)</li>
+        <li><i class="fa-solid fa-database"></i> Database Assistant</li>
+        <li> <i class="fa-solid fa-briefcase"></i> IT Support / Technician</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LABS -->
+  <section class="lab card">
+    <h3>Labs & Facilities</h3>
+    <p>
+The college has two computer labs with 
+      high-speed internet and modern software for practical learning. 
+    </p>
+
+    <div class="actions">
+      <img src="cslab.jpg">
+      <img src="cslab1.jpg">
+      <img src="cslab2.jpg">
+      </div>
+  </section>
+
+</section>
+  
+  
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/mjpgp_?igsh=MWgzY25oMzRsczZqOA=="><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+  
+  
+   <script src="script.js"></script>
+</body>
+</html>

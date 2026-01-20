@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style type="text/css">
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+.notice-section{
+   max-width:1100px;
+     margin-top:-50px;
+   background:#f5f7fb;   
+   border-radius:10px;
+   padding:70px 50px 50px 50px;
+   }
+   
+   /* LEFT */
+   .notice-left{
+   flex:1;   
+   }
+   
+   .notice-left h2{
+   font-size:28px;
+   margin-bottom:25px;
+   color:#1e2a5a;
+    
+   }
+   
+   /* NOTICE CARD */
+   
+  .notice-card{
+   background:#fff;
+   display:flex;
+   gap:15px;
+   padding:15px 10px 15px 5px;
+   border-radius:10px;
+   margin-bottom:15px;
+   
+   box-shadow:0 6px 15px rgba(0,0,0,0.1);
+   }
+   .notice-card a{
+      color: black;
+     text-decoration:none;
+   }
+   .notice-icon{
+   background:#eef3ff;
+   color:#1e5cb3;
+   min-width:45px;
+   height:45px;
+   border-radius:8px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size:18px;
+   }
+   
+   .notice-text h4{
+   font-size:16px;
+   margin-bottom:4px;
+   }
+.notice-text  .badge {
+  position: relative;
+  top: -8px;
+  left:5px;
+  color: white;
+  font-size: 10px;
+  background:red;
+  padding:2px 5px;
+  border-radius:9px  0 9px 0;
+}  
+   .notice-text p{
+   font-size:14px;
+   color:#555;
+   margin-bottom:6px;
+   }
+   
+   .notice-text span{
+   font-size:12px;
+   color:#888;
+   }
+   
+   /* BUTTON */
+   .notice-btn{
+   display:inline-block;
+   margin-top:10px;
+   background:#1e5cb3;
+   color:#fff;
+   padding:10px 18px;
+   border-radius:6px;
+   text-decoration:none;
+   font-size:14px;
+   font-weight:600;
+   }
+   @media(max-width:768px){
+   .notice-section{
+   flex-direction:column;
+    padding:30px 0 ;
+    
+   }
+
+   .notice-left h2{
+   text-align:center;
+   }
+    .notice-card-box{
+       padding:20px;
+       
+    }       
+   .notice-right{
+   display:none;
+   }
+     .notice-btn{
+          margin-left:20px;
+       
+     }
+   }
+</style>
+</head>
+<body>
+        <!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="#" class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+  <li> <a href="gallery.html">Gallery</a></li>
+
+ <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==   " class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+  
+<section class="notice-section">
+ 
+   <!-- LEFT: NOTICE LIST -->
+   <div class="notice-left">
+     <h2>Notice Board</h2>
+     <div class="notice-card-box">
+       <div class="notice-card">
+    <div class="notice-icon">
+    <i class=" fa-solid fa-graduation-cap"></i>
+    </div>
+         <a href="https://test.bteupexam.co.in/Odd_Semester/main/" target="_blanks">
+    <div class="notice-text">
+    <h4> 3rd Semester result out now <span class="badge">new</span> </h4>
+    <p>third semester result come in 14 jan 2026</p>
+    <span>14      jan 2026</span>
+    </div>
+           </a>
+    </div>
+       
+           <div class="notice-card">
+    <div class="notice-icon">
+    <i class=" fa-solid fa-graduation-cap"></i>
+    </div>
+             <a href="https://bteup.ac.in/PDFFILES/NEWS_639039742114143818.pdf" target="_blanks">
+    <div class="notice-text">
+    <h4> 3rd Semester result <span class="badge">new</span></h4>
+    <p>third semester result comming soon..</p>
+    <span>14 jan 2026</span>
+    </div>
+               </a>
+    </div> 
+       
+    
+     <div class="notice-card">
+       <div class="notice-icon">
+         <i class=" fa-solid fa-bullhorn"></i>
+       </div>
+       <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" target="_blanks">
+       <div class="notice-text">
+         <h4>Ongoing Admissions<span class="badge">new</span></h4>
+         <p>Apply now for the 2026–27 academic batch</p>
+         <span>15 jan 2026</span>
+       </div></a>
+     </div>
+       
+       <div class="notice-card">
+       <div class="notice-icon">
+         <i class=" fa-solid fa-graduation-cap"></i>
+       </div>
+       <div class="notice-text">
+         <h4>Scholarship Applications</h4>
+         <p>Apply before 25 December</p>
+         <span>20 Dec 2026</span>
+       </div>
+     </div>
+     
+    
+ 
+     <div class="notice-card">
+       <div class="notice-icon">
+         <i class="a fa-solid fa-calendar-days"></i>
+       </div>
+       <div class="notice-text">
+         <h4>Exam Schedule Released</h4>
+         <p>Check latest exam dates and timetable</p>
+         <span>18 Apr 2025</span>
+       </div>
+     </div>
+ 
+     
+     </div>
+     <a href="#" class="notice-btn">View All Notices</a>
+   </section>
+  
+  
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>faculty</title>
+   <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<style type="text/css">
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+   .facuty-section{
+       margin-top:-50px;
+      padding:80px 0 50px 0;
+  background:#F0EAD6;
+  font-family:Arial, sans-serif;
+ z-index:100;
+      
+   }
+   .faculty-title{
+         margin-bottom:25px;
+         text-align:center;
+      font-size:45px;
+      color:darkblue;
+      
+   }
+  .faculty-box{
+       padding:10px 25px 30px 25px;
+       background:#f6f9f7;
+      border-radius:15px;
+  }
+  .faculty-box h3{
+     margin:35px auto;
+         text-align:center;
+      font-size:25px;
+    color:#013220  ;
+  }
+.faculty-grid{
+  display:grid;
+  grid-template-columns:repeat(3 ,1fr); 
+  gap:30px;
+}
+
+.faculty-card{
+  background:#fff;
+  padding:10px 15px;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.faculty-card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:0px;
+}
+
+.faculty-card h3{
+  font-size:16px;
+  margin:10px auto 5px;
+   color: #000000;   /* Pure black */
+font-weight: 600;
+}
+.faculty-card p{
+    margin-bottom:8px;
+}
+.faculty-card span{
+  font-size:13px;
+ 
+   font-weight: 600;
+   color: #2e7d32;
+}
+ .a-faculty-card:hover  , .faculty-card:hover {
+     background:#0b2c5d;
+   
+}
+.faculty-card:hover h3,
+.a-faculty-card:hover h3{
+  color:#fff;
+}
+
+.faculty-card:hover p,
+.a-faculty-card:hover p{
+  color:lightgreen;
+}
+
+.faculty-card:hover span,
+.a-faculty-card:hover span{
+  color:lightblue;
+}
+   
+   
+   /*  cs + ecl + etc */
+   .a-faculty-grid{
+ 
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  
+}
+
+.a-faculty-card{
+  /*display:grid;
+  grid-template-columns:repeat(1,1fr);*/
+    /* image | text */
+ display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  align-items:center;
+  padding:10px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.a-faculty-card img{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.a-faculty-info h3{
+  margin:0;
+  font-size:18px;
+  text-align:center;
+}
+
+.a-faculty-info p{
+  margin:10px;
+  color:#555;
+   text-align:center;
+}
+
+.a-faculty-info span{
+  font-size:14px;
+  display:block;
+  color:#1e5cb3;
+   
+  font-weight:600;
+   text-align:center;
+}  
+   /*   humanities faculty */ 
+   .hf-faculty-grid{
+  display:grid;
+  grid-template-columns:repeat(4 ,1fr); 
+  gap:30px;
+}
+
+@media(max-width:768px){
+   .facuty-section{
+      padding:40px 0px;
+  
+   }
+   .faculty-box{
+       padding:10px 20px 30px 20px;
+     
+   }   .faculty-box h3{
+     margin:35px auto;
+     
+   }      
+  .faculty-grid{
+    grid-template-columns:repeat(1,1fr);
+  }
+    /* cs + ecl + etc  for mob*/ 
+.faculty-card h3{
+      margin-bottom: 4px;
+}
+   .faculty-card p{
+      margin-bottom:5px;
+}
+   
+   .a-faculty-grid{
+ 
+  grid-template-columns:repeat(1,1fr);
+  
+  }
+   .a-faculty-info h3{
+  margin:10px auto 10px;
+ 
+}
+   .a-faculty-info p{
+  margin:-5px auto 8px;
+  color:#555;
+   text-align:center;
+}
+.a-faculty-card{
+  flex-direction:row;
+  }
+      .hf-faculty-grid{
+  display:grid;
+  grid-template-columns:repeat(1 ,1fr); 
+  gap:30px;
+}
+}
+
+</style>
+</head>
+<body>
+   <!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA== " class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+   <li> <a href="gallery.html">Gallery</a></li>
+
+ <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+   
+   <!--  faculty-section -->
+<section class="facuty-section">
+  <h2 class="faculty-title">Our Faculty</h2>
+<div class="faculty-box">
+   <!-- all branch hod -->
+   <h3> Heads of Department</h3>
+  <div class="faculty-grid">
+
+    <div class=" faculty-card">
+      <img  src="hod.jpeg" alt="Faculty">
+      <h3>Mr. Ravindra Kumar</h3>
+      <p>Computer Science & Engineering</p>
+      <span>B.Tech</span>
+    </div>
+
+    <div class="faculty-card">
+      <img src="cs.jpg" alt="Faculty">
+      <h3>Mrs. Anjali Verma</h3>
+      <p>Electrical Engineering</p>
+      <span>M.Tech</span>
+    </div>
+
+    <div class="faculty-card">
+      <img src="cs.jpg" alt="Faculty">
+      <h3>Mrs. Neerja </h3>
+      <p>Electronics Engineering</p>
+      <span>Ph.D</span>
+    </div>
+
+  </div>
+      
+   <!-- cs faculty -->
+   <h3> Computer Science Faculty</h3>
+   <div class="a-faculty-grid">
+  
+  <div class=" a-faculty-card">
+  <img src="vivek.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. vivek singh</h3>
+  <p>DBMS & C Language</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class=" a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Vishwajeet Kumar</h3>
+  <p>Computer Network</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class=" a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Priyam </h3>
+  <p>Python</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  </div>
+
+   <!--   ecl faculty -->
+   <h3> Electrical Engineering Faculty</h3>
+   <div class="a-faculty-grid">
+  
+  <div class="a-faculty-card">
+  <img src="ajeet.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Ajeet Kumar</h3>
+  <p> Electrical Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class="a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Rakesh Kumar</h3>
+  <p>Electrical Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class="a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Rakesh Kumar</h3>
+  <p>Electrical Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  </div>
+      <!-- etc faculty -->
+   <h3> Electronics Engineering faculty</h3>   
+   <div class="a-faculty-grid">  
+  <div class="a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Rakesh Kumar</h3>
+  <p>Electronics Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class="a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Rakesh Kumar</h3>
+  <p>Electronics Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  
+  <div class="a-faculty-card">
+  <img src="cs.jpg" alt="Faculty">
+  <div class="a-faculty-info">
+  <h3>Mr. Rakesh Kumar</h3>
+  <p>Electronics Engineering</p>
+  <span>M.Tech</span>
+  </div>
+  </div>
+  </div>
+   <!--   hamanities  faculty -->
+      <h3> Humanities Faculty </h3>
+  <div class="hf-faculty-grid">
+
+    <div class="faculty-card">
+      <img src="math.jpg" alt="Faculty">
+      <h3>Mr. Gagandeep</h3>
+      <p>Mathematics</p>
+      <span>M.Tech</span>
+    </div>
+
+    <div class="faculty-card">
+      <img src="english.jpg" alt="Faculty">
+      <h3>Mrs. Coel Hazra</h3>
+      <p>Communication in English</p>
+      <span>M.Tech</span>
+    </div>
+
+    <div class="faculty-card">
+      <img src="physics.jpg" alt="Faculty">
+      <h3>Mr. Kaushik Tripathi</h3>
+      <p>Physics </p>
+      <span>Ph.D</span>
+    </div>
+
+       <div class="faculty-card">
+      <img src="cs.jpg" alt="Faculty">
+      <h3>Mrs. Menika </h3>
+      <p>Chemistry</p>
+      <span>Ph.D</span>
+    </div>
+     
+  </div>
+   
+   </div>
+</section>
+   
+   <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/mjpgp_?igsh=MWgzY25oMzRsczZqOA=="><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+   
+   
+   
+   
+    <script src="script.js"></script>
+</body>
+</html>

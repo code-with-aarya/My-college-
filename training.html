@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> training and placement</title>
+   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
+   <style type="text/css">
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   }
+   
+  .tpo-section{
+  margin-top:-50px ;
+  padding:60px 20px;
+  background:#f6f9f7;
+  font-family:Arial, sans-serif;
+  }
+  
+  .section-title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:40px;
+  }
+  
+  .section-title span{
+  color:#4caf50;
+  }
+  
+  /* TPO CARD */
+  .tpo-card{
+  max-width:1100px;
+  margin:20px;
+  background:#fff;
+  display:flex;
+  gap:30px;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  }
+  
+  .tpo-text{
+  flex:1;
+  }
+  
+  .tpo-text h3{
+  color:#4caf50;
+     margin-bottom:16px;
+     font-size:25px;
+  }
+   .tpo-text h3 span{
+  color:black;
+     margin-bottom:16px;
+     font-size:25px;
+  }
+  
+  .designation{
+  font-size:16px;
+  color:#666;
+  margin-bottom:15px;
+  }
+  
+  .tpo-image{
+   padding-right:10px;  
+  flex:1;
+  text-align:right;
+  
+  }
+  
+  .tpo-image img{
+  width:300px;
+  max-width:260px;
+  border-radius:18px;
+     box-shadow:4px 8px 24px rgba(0,0,0,0.6);
+
+  }
+  
+  /* STATS */
+  .placement{
+  max-width:900px;
+  background:#fff;
+  margin:40px 20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  padding:40px;
+   border-radius:20px;   
+  }
+   .placement>h3
+   {   
+        color:#4caf50;
+     margin-bottom:15px;
+     font-size:25px;
+    text-align:center;
+   }
+    .placement>p
+   {   
+        color:#222;
+     margin-bottom:40px;
+     font-size:17px;
+      line-height:1.7;
+      text-align:center;
+   }
+   
+   .placement-stats{
+  display:flex;
+  gap:40px;
+  justify-content:space-around;
+  
+  }
+  
+  .stat-box{
+  background:#f4f6f8;
+  padding:25px 40px;
+  border-radius:16px;
+  text-align:center;
+     box-shadow:4px 8px 24px rgba(0,0,0,0.3);
+
+  }
+  
+  .stat-box h3{
+  font-size:30px;
+  color:#2e7d32;
+  }
+  
+  /* RECRUITERS */
+  .sub-title{
+  text-align:center;
+  margin:40px 0 20px;
+     padding:30px 0;
+  font-size:26px;
+  }
+  
+  .recruiters{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  align-items:center;
+  }
+  
+.recruiters  .logo{
+  background:#fff;
+  padding:20px;
+  text-align:center;
+  border-radius:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  font-weight:600;
+  height:150px; 
+  
+  }
+  .recruiters .logo img{
+    width:100%;
+     border-radius:10px;
+    height:100%; 
+  }
+   
+  /* FEATURES */
+  .features{
+  max-width:1100px;
+  margin:20px 25px 0 25px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  }
+  
+  .feature-card{
+  background:#fff;
+  padding:30px 15px;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  }
+  .feature-card img{
+     
+     width:150px;
+     height:140px;
+  }
+  
+  .feature-card h4{
+  color:#2e7d32;
+  margin-bottom:10px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width:768px){
+     .tpo-section{
+  padding:40px 5px;
+      
+ 
+  }
+     .section-title{
+          font-size:30px;
+        
+     }
+   
+         
+   .tpo-text h3{
+      font-size:25px;
+      
+   }
+  .tpo-card{
+  flex-direction:column;
+  text-align:center;
+     padding:40px 10px ;
+     margin :0;
+  }
+  .tpo-image{
+   padding:0; 
+  flex:1;
+  text-align:center;
+  } 
+    .tpo-image img{
+       width:350px;
+    }       
+     .stat-box{
+  background:#e8f5e9;
+  padding:25px 30px;
+        width:250px;
+         margin:auto;
+        
+     }
+     
+     .placement{
+          margin: 70px 0;
+        padding: 30px 15px;
+     }
+     .placement>h3{
+         
+       font-size:30px;
+     }
+  
+     .recruiters{
+ grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+     padding:30px 10px;
+  }     
+  .features{
+  grid-template-columns:repeat(1,1fr);
+  }
+   
+  .placement-stats{
+  flex-direction:column;
+  }
+     
+  .recruiters  .logo{
+        width:150px;
+      height:150px;     
+      align-self:center;
+    
+  }
+       .recruiters  .logo img{
+        width:100%;
+        align-self:center;
+         
+      
+  }
+       .feature-card{
+           margin:20px;
+          padding:20px 10px;
+          
+       }
+   
+  }
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA== " class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+ <li> <a href="gallery.html">Gallery</a></li>
+
+   <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+   
+<section class="tpo-section">
+
+  <h2 class="section-title">
+    Training and <span>Placement</span>
+  </h2>
+
+  <!-- TPO INFO -->
+  <div class="tpo-card">
+    <div class="tpo-text">
+      <h3>Training <span>& Placement Officer</span></h3>
+      <h4>Mr. Yatan Dhari Dwivedi</h4>
+      <p class="designation">M.Tech (Control & Instrumentation Engineering)</p>
+
+      <p>
+        The Training and Placement Cell focuses on skill development,
+        career guidance, and campus recruitment. The cell prepares
+        students for industry requirements and supports them in
+        achieving successful placements.
+      </p>
+    </div>
+
+    <div class="tpo-image">
+      <img src="tpo.png" alt="Training and Placement Officer">
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="placement">
+     <h3>Placement</h3>
+     <p class="placement-description"> Every year, more than 60 companies visit the campus for placements.
+The average package offered is up to ₹2.0 LPA, depending on student performance and industry demand.</p>
+     <div class="placement-stats">
+    <div class="stat-box">
+      <h3>60+</h3>
+      <p>Companies Every Year</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>₹2.0 LPA</h3>
+      <p>Average Package</p>
+    </div>
+  </div>
+  </div>
+  <!-- TOP RECRUITERS -->
+  <h3 class="sub-title">Top Recruiters</h3>
+
+  <div class="recruiters">
+    <div class="logo"><img src="tata.png" alt="tata"></div>
+    <div class="logo"><img src="m&ms.jpg" alt="m&ms"></div>
+    <div class="logo"><img src="simplex.png" alt="simplex"></div>
+    <div class="logo"><img src="p&cp.png" alt="p&p project "></div>
+    <div class="logo"><img src="mbpl.png" alt="mepl"></div>
+    <div class="logo"><img src="hindalco.png" alt="hindalco"></div>
+    <div class="logo"><img src="soma.jpg" alt="soma"></div>
+  </div>
+
+  <!-- FEATURES -->
+  <h3 class="sub-title">Placement Support</h3>
+
+  <div class="features">
+    <div class="feature-card">
+       <img src="training.png">
+      <h4>Skill Training Workshops</h4>
+      <p>Training sessions to improve technical and soft skills.</p>
+    </div>
+
+    <div class="feature-card">
+       <img src="training1.png">
+      <h4>Career Counseling</h4>
+      <p>Guidance for interviews, careers, and higher studies.</p>
+    </div>
+
+    <div class="feature-card">
+       <img src="training4.jpg">
+      <h4>Industry Networking</h4>
+      <p>Connecting students with top companies and alumni.</p>
+    </div>
+  </div>
+
+</section>
+   
+   
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/mjpgp_?igsh=MWgzY25oMzRsczZqOA=="><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="#terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

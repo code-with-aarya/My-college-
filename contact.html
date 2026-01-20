@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+  body{background:#F0EAD6;}
+/* CONTACT info SECTION */
+
+.contact-section{
+  max-width:1000px;
+  margin:40px 40px;
+  padding:0 20px;
+  
+}
+
+.contact-title{
+  margin-bottom:40px;
+  font-size:36px;
+  text-align:center;
+  text-decoration:underline;
+  text-underline-offset:7px;
+}
+
+.contact-title span{
+  color:#ff6b00;
+}
+
+.contact-box{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:30px;
+  
+}
+
+.info-box{
+  background:#fff;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.info-box h3{
+  margin-bottom:10px;
+  color:#ff6b00;
+}
+
+.info-box a{
+   line-height:1.4;
+  color:#000;
+  font-size:17px;
+  text-decoration:none;
+}
+
+/*  CONTACT FORM SECTION */
+
+#contact-form{
+  max-width:1000px;
+  margin: 40px 55px;
+  padding:30px;
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.1);
+}
+
+.form-title{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:10px;
+  font-weight:700;
+  color:#0a1a33;
+}
+
+.form-p{
+  text-align:center;
+  font-size:17px;
+  color:#444;
+  margin-bottom:30px;
+}
+
+  .form-map-box{
+  
+  padding:25px 20px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+   justify-content:center;
+  gap:50px;
+  font-weight:600;
+  
+}
+.left-card, .right-card{
+/*  border:1px solid #c9d7e8;*/
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  width:360px;
+  height:530px;
+  display:flex;
+     flex-direction:column;
+     align-items:center;
+  
+}
+
+
+  .contact-header{
+  background:#032b63;
+  padding:15px 20px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+   width:100%;
+}
+
+/*  FORM ELEMENTS */
+
+form{
+  padding:25px;
+}
+
+.form-label{
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:6px;
+  display:block;
+  color:#0a1a33;
+}
+
+.form-input{
+  width:100%;
+  padding:12px 14px;
+  border:1.4px solid #d1d6e0;
+  border-radius:8px;
+  margin-bottom:18px;
+  font-size:14px;
+}
+
+.form-input:focus{
+  border-color:#0a61d8;
+  outline:none;
+}
+
+.textarea{
+  height:160px;
+  resize:none;
+}
+
+.submit-btn{
+  width:100%;
+  padding:14px;
+  background:#032b63;
+  color:#fff;
+  font-size:16px;
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.submit-btn:hover{
+  background:#063b8a;
+}
+
+/*  MAP */
+
+.right-card iframe{
+  width:100%;
+  height:260px;
+  border:none;
+  border-radius:12px;
+  margin:0 0 20px 0;
+}
+  .right-card p a{
+    font-weight:500; 
+    font-size:16px;
+    text-decoration:none;
+      color:black;
+  }
+  .right-card p{
+      padding:10px 15px;
+      margin-bottom:10px;
+      color:black;
+    line-height:2;
+    text-align:left;
+    
+  }
+ .right-card .btn{
+   width:90%;
+  padding:14px 85px;
+  background:#032b63;
+  color:#fff;
+  font-size:16px;
+  border:none;
+  border-radius:8px;
+  font-weight:600; 
+     text-decoration:none;
+  text-align:center;
+   margin:10px auto
+  }
+  .right-card .btn i{
+           margin-right:5px;
+    color:darkwhite;
+  }
+
+/*   RESPONSIVE */  
+@media(max-width:768px){
+  .contact-section{
+       margin:40px 0;
+  }
+  
+  #contact-form{
+    padding:25px;
+    margin:50px 0;
+  }
+   .left-card{
+
+  width:320px;
+  height:auto;
+  }
+   .right-card{
+  
+    /* justify-content:center;*/
+  width:320px;
+  height:450px;
+  
+}
+.form-map-box{
+   flex-direction:column;
+   padding :0;
+} 
+  
+  .right-card iframe{
+    height:200px;
+    
+  }
+  .right-card .btn i{
+           margin-left:-5px;
+}
+}
+</style>
+</head>
+<body>
+  <!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA== " class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+  <li> <a href="gallery.html">Gallery</a></li>
+
+ <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+<!-- contact form -->
+<section class="contact-section">
+  <h1 class="contact-title">Contact <span>Us</span></h1>
+
+  <div class="contact-box">
+
+    <div class="info-box">
+      <h3>Address <i class="fa-solid fa-location-dot"></i></h3>
+      <p>
+        <a href="https://maps.app.goo.gl/xXTgZr4YmXrA2nrx9" target="_blank">
+          Kaushambi, Teva, near Police Line,
+          Manjhanpur, Uttar Pradesh 212207
+        </a>
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Phone <i class="fa-solid fa-phone"></i></h3>
+      <p>
+        <a href="tel:7007237006">+91 7007237006</a><br>
+        <a href="tel:9140444301">+91 9140444301</a>
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Email <i class="fa-solid fa-envelope"></i></h3>
+      <p>
+        <a href="mailto:mjpgpcollege@gmail.com">
+          mjpgpkaushambi@gmail.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact-form">
+  <h2 class="form-title">Get In Touch</h2>
+  <p class="form-p">
+    Have a question or want to work together? Feel free to reach out!
+  </p>
+<div class="form-map-box">
+  <div class="left-card">
+
+    <div class="contact-header">
+      <i class="fa-solid fa-envelope"></i> Contact Form
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key"
+             value="a49576ce-5e96-454b-8c40-86d7233d5f0e">
+
+      <label class="form-label"><i class="fa-solid fa-user"></i> Your Name</label>
+      <input type="text" name="name" class="form-input"
+             placeholder="Enter your name" required>
+
+      <label class="form-label"><i class="fa-solid fa-envelope"></i> Your Email</label>
+      <input type="email" name="email" class="form-input"
+             placeholder="Enter your email" required>
+
+      <label class="form-label"><i class="fa-solid fa-comment-dots"></i> Your Message</label>
+      <textarea name="message" class="form-input textarea"
+                placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="submit-btn"><i class="fa-solid fa-location-arrow"></i> Send Message</button>
+    </form>
+    </div>
+    <!-- MAP -->
+    <div class="right-card">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.609424976763!2d81.33113197771446!3d25.484714219990984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b2e5e5f0bed7b%3A0x1302a9873851da7c!2sMahatma%20Jyotibaphule%20Government%20Polytechnic%2C%20Kaushambi!5e0!3m2!1sen!2sin!4v1767877535449!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:mjpgpcollege@gmail.com">
+          mjpgpkaushambi@gmail.com
+        </a><br>
+      
+      <i class="fa-solid fa-phone"></i>
+        <a href="tel:7007237006"> +91 7007237006</a>, 
+        <a href="tel:9140444301"> +91 9140444301 </a><br>
+      
+       <i class="fa-solid fa-location-dot"></i>   Kaushambi, Teva, near Police Line,<br>
+          Manjhanpur, Uttar Pradesh 212207
+          </p>
+      <a  class="btn "href="https://maps.app.goo.gl/HMykifW2k2o3Sify7"><i class="fa-solid fa-map-location-dot"></i> View on Map</a>
+    </div>
+
+  </div>
+</section>
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/mjpgp_?igsh=MWgzY25oMzRsczZqOA=="><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

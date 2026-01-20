@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  
+  }
+.about-section{
+  margin-top:-50px;
+  padding:60px 0;
+  background:#F0EAD6;
+  font-family:Arial, sans-serif;
+}
+.about-section h2{
+  font-size:34px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.about-section h2 span{
+  color:#5fbf3a;
+}
+.about-top{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.about-text h3 span{
+  color:#5fbf3a;
+  
+}
+
+.about-text p{
+  font-size:16px;
+  color:#555;
+  line-height:1.6;
+}
+
+.about-image{
+  
+  flex:1;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:10px;
+  box-shadow:4px 8px 24px rgba(0,0,0,0.6);
+
+}
+
+    /* == branch == */
+.branch-container{
+  margin-top:40px ;
+ background:#eef5fb;
+  padding:20px;
+  
+}
+
+.branch-container h3{
+  margin-bottom:20px ;
+  font-size:30px;
+  color:#000;
+  text-align:center;
+  
+}
+.branch-container p{
+     color:#333;
+  line-height:1.5;
+      font-size:18px;
+  text-align:center;
+}
+ .branches{
+     margin-top:30px;
+     padding :25px;
+     display:flex;
+     justify-content:space-between;
+  gap:30px;
+   align-items:center;
+   max-width:1000px;
+  
+ }
+    .branches a>.fa-angle-right{
+    /*  width:100%;
+       height:100%;*/
+      color:white;
+    }      
+    .cs, .electrical, .electronic{
+      background:#fff;
+      width:100%;
+      padding:20px 15px;
+        border-radius:16px;
+      display:flex;
+      flex-direction:column;
+     justify-content:center;
+  gap:1px;
+   align-items:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  height:320px;
+     }
+     .cs>i, .electrical>i, .electronic>i{
+                  font-size:30px;
+        text-align:center;
+        padding:20px 0;
+        background:#0b2c5d;
+        width:70px;
+       height:70px;
+       color:orange;
+        margin-bottom:20px;
+       border-radius:50px;  
+     }
+ .cs h4 , .electrical h4, .electronic h4{
+             margin:10px 0;
+     font-size:16px;
+  }
+  .cs p, .electrical p, .electronic p{
+              margin-bottom:20px ;
+     font-size:14px;
+     color:#666;
+  }
+  .cs a, .electrical a, .electronic a{
+           text-decoration:none;
+       color:white;
+       background:#000;
+    
+      padding:10px 25px ;
+       border-radius:10px;
+     font-weight:600;   
+  }
+  
+/* Mission Vision */
+.mission-vision{
+  max-width:1100px;
+  margin:60px auto 0;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.mv-card{
+  flex:1;
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.mv-card h3{
+  color:#0b2c5d;
+  font-size:30px;
+  margin-bottom:10px;
+}
+  .mv-card i{
+     color:orange;
+     margin-left:4px;
+  }
+
+.mv-card p{
+  color:#555;
+  line-height:1.6;
+  font-size:20px;
+}
+
+/* Facilities */
+.facilities{
+  max-width:1100px;
+  margin:20px auto 0;
+ 
+}
+    .facility-box{
+  max-width:1100px;
+  margin:20px auto 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+   padding:20px;
+  }
+ .sub-title{
+  text-align:center;
+  margin:30px 0 10px;
+     padding:30px 0;
+  font-size:30px;
+  }
+.facility-card{
+  background:#fff;
+  padding:25px ;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.07);
+}
+
+  .facility-card img{
+    border-radius:50%;
+     width:150px;
+     height:140px;
+    margin-bottom:10px;
+  }
+.facility-card h4{
+  color:#2e7d32;
+  margin-bottom:8px;
+}
+
+.facility-card p{
+  font-size:14px;
+  color:#555;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .about-section{
+  padding:30px 0;  
+  margin-top:-50px ;
+    
+  }
+  .about-section  h2{
+  font-size:33px;
+  }
+  .about-top{
+    
+    flex-direction:column-reverse;
+  }
+.about-image img{
+      height:200px;
+}
+ 
+  .branch-container p{
+    
+    font-size:16px;
+    
+  }
+   .branches{
+     margin-top:20px;
+     padding :20px;
+     display:flex;
+   flex-direction:column;
+    
+  }
+   .cs p , .electrical p , .electronic p{
+ 
+       font-size:15px;
+   }
+  .mission-vision{
+    flex-direction:column;
+  }
+
+.mv-card p{
+  
+  font-size:16px;
+  margin-bottom:10px;
+}
+.facility-box{
+  gap:30px;
+  margin:20px auto 0;
+  grid-template-columns:repeat(1,1fr);
+  
+}
+}
+
+
+</style>
+</head>
+<body>
+  <!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="https://admissions.nic.in/JEECUP/Applicant/Report/Instructions.aspx?enc=2ygsFDRHW5rwh85RrtqTeA==" class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="index.html" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+ <li> <a href="gallery.html">Gallery</a></li>
+
+  <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="#apply" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+  <!--   about section --->
+<section class="about-section">
+<h2>About   <span>MJPGP</span> College</h2>
+
+  <div class="about-top">
+    <div class="about-text">
+      
+      <h3><span>MJPGP</span> college</h3>
+
+      <p>Mahatma Jyotiba Phule Government Polytechnic [MJPGP], established in 2009, is a prestigious 
+        Government institution located in Manjhanpur, Uttar Pradesh. The institution is recognized 
+        for its academic integrity and future-focused learning approach. It continues to shape 
+        professionals through well-structured, industry-aligned programs.
+Mahatma Jyotiba Phule Government Polytechnic  offers 3 diverse courses across multiple 
+        disciplines. The institute provides a wide range of specialized programs in Polytechnic, thoughtfully 
+        designed to equip students with industry-relevant skills.</p>
+      </div>
+    <!-- about image -->
+    <div class="about-image">
+      <img src="college.jpg" alt="College Building">
+    </div>
+  
+    </div> 
+      <!-- branch  -->
+    <div class="branch-container">
+       <h3>Branches</h3>    
+      <p>
+        Our college offers technical education through well-structured engineering branches that focus on practical knowledge, skill development, and industry-oriented learning to prepare students for future careers.
+      </p>
+      <div class="branches">
+        <div class="cs"> <i class="fa-solid fa-laptop-code"></i>
+          <h4>Computer Science & Engineering</h4>
+          <p>Focuses on programming, software development, and modern computing technologies.</p>
+          <a href="course.html">Know more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="electrical">
+          <i class="fa-solid fa-bolt"></i>
+          <h4>Electrical Engineering</h4>
+          <p>Deals with electrical machines, power systems, and industrial electrical practices.</p>
+          <a href="course.html">Know more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="electronic">
+          <i class="fa-solid fa-robot"></i>
+          <h4>Electronics Engineering</h4>
+          <p>Covers electronic circuits, communication systems, and digital electronics fundamentals.</p>
+          <a href="course.html">Know more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+      
+    </div>
+
+  
+  <!-- Mission & Vision -->
+  <div class="mission-vision">
+    <div class="mv-card">
+      <h3>Our Mission <i class="fa-solid fa-bullseye"></i></h3>
+      <p>
+        To provide quality technical education and practical skills
+        that help students build strong careers and become responsible
+        professionals.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <h3>Our Vision <i class="fa-solid fa-rocket"></i></h3>
+      <p>
+        To grow as a leading government polytechnic that empowers
+        students with knowledge, skills, and confidence for the future.
+      </p>
+    </div>
+  </div>
+
+  <!-- Facilities -->
+  <div class="facilities">
+    <h3 class="sub-title"> Facilities</h3>
+<div class="facility-box">
+    <div class="facility-card">
+       <img src="lab.jpg" alt="lab">
+      <h4>Modern Labs</h4>
+      <p>Well-equipped labs for practical learning.</p>
+    </div>
+
+    <div class="facility-card">
+      <img src="hostel.jpg" alt="hostel">
+      <h4>Girls Hostel</h4>
+      <p>Safe and secure hostel facility for girls.</p>
+    </div>
+
+    <div class="facility-card">
+       <img src="workshop.jpg" alt="workshop">
+      <h4>Workshops</h4>
+      <p>Hands-on training for real-world skills.</p>
+    </div>
+
+    <div class="facility-card">
+     
+       <img src="campus3.jpg" alt="campus">
+       <h4>Active Campus</h4>
+      <p>Sports, activities, and student events.</p>
+    </div>
+  </div>
+    </div>
+</section>
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://www.facebook.com/Mjpgp.Admin"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/mjpgp_?igsh=MWgzY25oMzRsczZqOA=="><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

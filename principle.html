@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>principle massage</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+
+.principal-section{
+  padding:60px 20px;
+  background:#f6f9f7;
+  font-family:Arial, sans-serif;
+}
+
+.principal-container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:60px;
+  background:#fff;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  
+}
+
+.principal-image{
+  flex:1;
+  text-align:center;
+  
+}
+
+.principal-image img{
+  width:100%;
+  height:350px;
+  max-width:380px;
+  border-radius:18px;
+  box-shadow:4px 8px 24px rgba(0,0,0,0.4);
+
+}
+
+.principal-content{
+  flex:2;
+}
+
+.principal-content h2{
+  font-size:35px;
+  margin-bottom:20px;
+  color:#0b2c5d;
+}
+  .principal-content h2 span {
+     color:#2e7d32;
+       
+  }
+
+.principal-content p{
+  font-size:15px;
+  color:#555;
+  line-height:1.7;
+  margin-bottom:12px;
+}
+
+.principal-content h4{
+  margin-top:20px;
+  font-size:18px;
+  color:#2e7d32;
+  text-align:right;
+}
+
+.principal-content  b{
+  display:block;
+  text-align:right;
+  font-size:14px;
+  color:#777;
+}
+  .principal-content span+p{
+  margin-top:1px;
+  color:#222;
+    text-align:right;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .principal-section{
+    padding:10px 
+  }
+  .principal-image img{
+       width:250px;
+    height:350px;
+  }
+  .principal-content{
+        padding:0;
+    
+  }
+  .principal-content h2{
+  font-size:30px;
+    
+  }
+  .principal-content p{
+  font-size:14px;
+    
+  }
+  .principal-container{
+    flex-direction:column;
+    text-align:center;
+    padding:30px 15px;
+  
+  }
+}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="logo">
+      <img src="logo.png" alt="college-logo" >
+     <div class="logo-content" > <h2><span class="mobile-text">MJPGP Kaushambi</span> <span class="desktop-text">Mahatma jyotiba phule government pollytechnic kaushambi</span></h2>
+      <p> <span class="desktop-text">Manjhanpur , Police Line, </span>Teva , Kaushambi - 212207</p>
+      </div>
+    </div>
+    <div class=" top-contact" >
+     <a href="#" class="search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+    
+           <span class="closebtn" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i></span>
+           <span class="openbtn"   onclick="openmenu()" ><i class="fa-solid fa-bars"></i></span>
+      
+    <a href="mailto:mjpgpcollege@gmail.com" ><i class="fa-solid fa-envelope"></i> mjpgpcollege@gmail.com</a>
+    <a href="tel:8858903201" ><i class="fa-solid fa-phone"></i> 9161624501</a>
+    
+    <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> tewa , kaushambi -212207</a>     
+        <a href="#" class="apply-now"  >Apply Now</a>
+     
+    </div>
+  </div>
+ 
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="nav" id="nav">
+   <div class="main-menu" >
+      
+
+<ul id="menu" >
+
+  <li><a href="#hero" class="active">Home</a></li>
+ <li> <a href="about.html">about </a></li>
+ <li> <a href="course.html">courses</a></li>
+ <li> <a href="faculty.html">faculty</a></li>
+ <li> <a href="training.html">placement</a></li>
+ <li> <a href="notice.html">notice board</a></li>
+ <li> <a href="contact.html">contact</a></li>      
+ <li> <a href="#apply" class="apply-now" >apply now</a></li>      
+ 
+</ul>
+</div>
+</nav>
+  
+<section class="principal-section">
+  <div class="principal-container">
+
+    <div class="principal-image">
+      <img src="principle.png" alt="College Principal">
+    </div>
+
+    <div class="principal-content">
+      <h2>Principal’s <span class="Span">Message</span></h2>
+   
+      <p>I am proud to lead this institution and work continuously for the overall development of our students. Our aim is to build strong professional ethics, discipline, and practical skills while helping students maintain a balance between their personal and professional lives.</p>
+      <p>Established in 2009, MJPGP Kaushambi is known for quality technical education and ethical values. Students admitted through JEECUP are among the talented learners of the state.</p>
+        <p>Our main focus is our students. We encourage disciplined learning, practical knowledge, and skill development. The institute has a good placement record, and our students have performed well in industry, academics, and administration.
+Along with classroom teaching, we promote laboratory work, industrial training, sports, and cultural activities. I thank all stakeholders for their support in making MJPGP Kaushambi a trusted center of technical education.</p>
+      <h4>
+Mr. Sujeet Kumar Singh
+ </h4>
+      <span ><b>Principal, MJPGP</b></span>
+      <p>BE IIT Roorkee
+Teaching experience 21 years</p>
+    </div>
+
+  </div>
+</section>
+  
+  
+  <!-- footer section-->
+  <footer class="college-footer">
+  <div class="footer-container">
+  
+  <div class="footer-col">
+  <h3>Quick Links</h3>
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="course.html">Courses</a></li>
+  <li><a href="training.html">Placements</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Other Links</h3>
+  <ul>
+  <li><a href="principle.html">Principal Message</a></li>
+  <li><a href="notice.html">Notice Board</a></li>
+  <li><a href="faculty.html">Faculty</a></li>
+  <li><a href="admission.html">Admissions</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Contact Us</h3>
+  <a href="mailto:mjpgpkaushambi@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i> mjpgpkaushambi@gmail.com</a>
+  <a href="tel:9955642049" ><i class="fa-solid fa-phone"></i>  +91 99556 42049</a>
+  <a href="https://maps.app.goo.gl/HMykifW2k2o3Sify7" ><i class="fa-solid fa-location-dot"></i> Kaushambi,Teva, near Police Line, Manjhanpur, Uttar Pradesh 212207</a>
+  </div>
+  
+  <div class="footer-col">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p class="follow-text">
+  Stay connected for updates and announcements.
+  </p>
+  </div>
+  
+  </div>
+  
+  <div class="footer-bottom">
+  <p>© 2025 Mahatma Jyotiba Phule Government Polytechnic. All Rights Reserved.</p>
+  <div class="footer-links">
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms of Use</a>
+  </div>
+  </div>
+  </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
